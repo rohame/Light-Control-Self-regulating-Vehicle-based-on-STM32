@@ -1,4 +1,4 @@
-#include "stm32f10x.h"
+ï»¿#include "stm32f10x.h"
 #include "stm32f10x_it.h" 
 #include "usart.h"
 
@@ -11,7 +11,7 @@ s32 V2,V3,V4,V5;
 
 extern s32 rcnt2,rcnt3,rcnt4,rcnt5;
 
-void get_encoder_ONE(void)//*******************¼ÆËãµ±Ç°Êµ¼ÊËÙ¶ÈV
+void get_encoder_ONE(void)//*******************è®¡ç®—å½“å‰å®é™…é€Ÿåº¦V
 {
 	s32 CNT2_temp,CNT2_last;
 
@@ -36,7 +36,7 @@ void get_encoder_ONE(void)//*******************¼ÆËãµ±Ç°Êµ¼ÊËÙ¶ÈV
 
 }
 
-void get_encoder_TWO(void)//******************¼ÆËãµ±Ç°Êµ¼ÊËÙ¶ÈV
+void get_encoder_TWO(void)//******************è®¡ç®—å½“å‰å®é™…é€Ÿåº¦V
 {
   s32 CNT3_temp,CNT3_last;
  
@@ -62,7 +62,7 @@ void get_encoder_TWO(void)//******************¼ÆËãµ±Ç°Êµ¼ÊËÙ¶ÈV
 }
 
 
-void get_encoder_THR(void)//*********************¼ÆËãµ±Ç°Êµ¼ÊËÙ¶ÈV
+void get_encoder_THR(void)//*********************è®¡ç®—å½“å‰å®é™…é€Ÿåº¦V
 {
   s32 CNT4_temp,CNT4_last;
   
@@ -88,7 +88,7 @@ void get_encoder_THR(void)//*********************¼ÆËãµ±Ç°Êµ¼ÊËÙ¶ÈV
 }
 
 
-void get_encoder_FOU(void)//*********************¼ÆËãµ±Ç°Êµ¼ÊËÙ¶ÈV
+void get_encoder_FOU(void)//*********************è®¡ç®—å½“å‰å®é™…é€Ÿåº¦V
 {
   s32 CNT5_temp,CNT5_last;
   
