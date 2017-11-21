@@ -1,0 +1,59 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.16.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=6XJEV-P1LMB-77BRP-M9GC3-MU3X5-5Z4TE
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.16.0.0
+Toolchain Path:  E:\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 (build 20)
+Assembler:       Armasm.exe V5.06 (build 20)
+Linker/Locator:  ArmLink.exe V5.06 (build 20)
+Library Manager: ArmAr.exe V5.06 (build 20)
+Hex Converter:   FromElf.exe V5.06 (build 20)
+CPU DLL:         SARMCM3.DLL V5.16.0.0
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.17.0
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+D:\大三下\嵌入式系统\大作业\FINAL？\USER\ATK_ESP8266.uvprojx
+Project File Date:  06/14/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 (build 20)', folder: 'E:\keil5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+main.c(123): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "u8 *"
+  		     p=show_datalx;
+main.c(136): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "u8 *"
+  	     p=show_datalx;
+main.c(253): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  							spd=atoi(s);	
+main.c(265): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  							dis=atoi(q)*2;
+main.c(266): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                              printf("%d",atoi(q));
+main.c(145): warning:  #550-D: variable "key" was set but never used
+  	  u8 key,fontok=0; 	 
+main.c(145): warning:  #550-D: variable "fontok" was set but never used
+  	  u8 key,fontok=0; 	 
+main.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=66002 RO-data=7718 RW-data=732 ZI-data=1095956  
+FromELF: creating hex file...
+"..\OBJ\ATK_ESP8266.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\大三下\嵌入式系统\大作业\FINAL？\USER\RTE
+  E:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

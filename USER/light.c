@@ -1,0 +1,27 @@
+#include "myiic.h"
+#include "light.h"
+#include "sys.h"
+void bh_data_send(u8 command)
+{
+    do{
+    IIC_Start();                      //iic????
+    IIC_Send_Byte(BHAddWrite);       //??????
+    }while(IIC_Wait_Ack());           //??????
+    IIC_Send_Byte(command);          //????
+    IIC_Wait_Ack();                   //??????
+    IIC_Stop();                       //iic????
+} 
+
+u16 bh_data_read(void)
+{
+	u16 buf;
+	IIC_Start();                       //iic????
+	IIC_Send_Byte(BHAddRead);         //??????+????
+	IIC_Wait_Ack();                     //??????
+	buf=IIC_Read_Byte(1);              //????
+	buf=buf<<8;                        //??????????
+	buf+=0x00ff&IIC_Read_Byte(0);      //??????????
+	IIC_Stop();                        //?????? 
+	return buf; 
+}
+
